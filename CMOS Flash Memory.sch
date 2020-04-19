@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 5
+Sheet 2 4
 Title ""
 Date ""
 Rev ""
@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L 28F010:28F010 U5
+L proj5-rescue:28F010-28F010 U5
 U 1 1 5E9B9D1A
 P 2600 2950
 F 0 "U5" H 3700 3337 60  0000 C CNN
@@ -86,7 +86,7 @@ Wire Wire Line
 Wire Wire Line
 	4800 3950 5400 3950
 $Comp
-L 28F010:28F010 U7
+L proj5-rescue:28F010-28F010 U7
 U 1 1 5E9C1E63
 P 7150 2800
 F 0 "U7" H 8250 3187 60  0000 C CNN

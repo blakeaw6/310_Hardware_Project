@@ -1,0 +1,252 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Memory_RAM:CY7C199 U13
+U 1 1 5E9CDA22
+P 3000 2100
+F 0 "U13" H 3000 3481 50  0000 C CNN
+F 1 "CY7C199" H 3000 3390 50  0000 C CNN
+F 2 "" H 3000 2100 50  0001 C CNN
+F 3 "" H 3000 2100 50  0001 C CNN
+	1    3000 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5E9CE92B
+P 3300 900
+F 0 "#PWR?" H 3300 750 50  0001 C CNN
+F 1 "VCC" H 3317 1073 50  0000 C CNN
+F 2 "" H 3300 900 50  0001 C CNN
+F 3 "" H 3300 900 50  0001 C CNN
+	1    3300 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E9CF0A6
+P 3000 3300
+F 0 "#PWR?" H 3000 3050 50  0001 C CNN
+F 1 "GND" H 3005 3127 50  0000 C CNN
+F 2 "" H 3000 3300 50  0001 C CNN
+F 3 "" H 3000 3300 50  0001 C CNN
+	1    3000 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 900  3300 900 
+Wire Bus Line
+	2400 2600 2400 1200
+Wire Bus Line
+	2400 1200 2050 1200
+Text Label 2100 1200 2    50   ~ 0
+AB[0:19]
+Wire Bus Line
+	3600 1900 3600 1200
+Wire Bus Line
+	3600 1200 3900 1200
+Text Label 3900 1200 0    50   ~ 0
+DB[0:15]
+Wire Wire Line
+	2400 2800 2050 2800
+Wire Wire Line
+	2400 2900 2050 2900
+Wire Wire Line
+	2400 3000 2050 3000
+Text Label 2050 2800 2    50   ~ 0
+HighSRAM
+Text Label 2050 2900 2    50   ~ 0
+RD
+Text Label 2050 3000 2    50   ~ 0
+LowWR
+$Comp
+L Memory_RAM:CY7C199 U14
+U 1 1 5E9D46C7
+P 7700 2100
+F 0 "U14" H 7700 3481 50  0000 C CNN
+F 1 "CY7C199" H 7700 3390 50  0000 C CNN
+F 2 "" H 7700 2100 50  0001 C CNN
+F 3 "" H 7700 2100 50  0001 C CNN
+	1    7700 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5E9D46CD
+P 8000 900
+F 0 "#PWR?" H 8000 750 50  0001 C CNN
+F 1 "VCC" H 8017 1073 50  0000 C CNN
+F 2 "" H 8000 900 50  0001 C CNN
+F 3 "" H 8000 900 50  0001 C CNN
+	1    8000 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E9D46D3
+P 7700 3300
+F 0 "#PWR?" H 7700 3050 50  0001 C CNN
+F 1 "GND" H 7705 3127 50  0000 C CNN
+F 2 "" H 7700 3300 50  0001 C CNN
+F 3 "" H 7700 3300 50  0001 C CNN
+	1    7700 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 900  8000 900 
+Wire Bus Line
+	7100 2600 7100 1200
+Wire Bus Line
+	7100 1200 6750 1200
+Text Label 6800 1200 2    50   ~ 0
+AB[0:19]
+Wire Bus Line
+	8300 1900 8300 1200
+Wire Bus Line
+	8300 1200 8600 1200
+Text Label 8600 1200 0    50   ~ 0
+DB[0:15]
+Wire Wire Line
+	7100 2800 6750 2800
+Wire Wire Line
+	7100 2900 6750 2900
+Wire Wire Line
+	7100 3000 6750 3000
+Text Label 6750 2800 2    50   ~ 0
+HighSRAM
+Text Label 6750 2900 2    50   ~ 0
+RD
+Text Label 6750 3000 2    50   ~ 0
+LowWR
+$Comp
+L Memory_RAM:CY7C199 U15
+U 1 1 5E9D54CF
+P 3050 5350
+F 0 "U15" H 3050 6731 50  0000 C CNN
+F 1 "CY7C199" H 3050 6640 50  0000 C CNN
+F 2 "" H 3050 5350 50  0001 C CNN
+F 3 "" H 3050 5350 50  0001 C CNN
+	1    3050 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5E9D54D5
+P 3350 4150
+F 0 "#PWR?" H 3350 4000 50  0001 C CNN
+F 1 "VCC" H 3367 4323 50  0000 C CNN
+F 2 "" H 3350 4150 50  0001 C CNN
+F 3 "" H 3350 4150 50  0001 C CNN
+	1    3350 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E9D54DB
+P 3050 6550
+F 0 "#PWR?" H 3050 6300 50  0001 C CNN
+F 1 "GND" H 3055 6377 50  0000 C CNN
+F 2 "" H 3050 6550 50  0001 C CNN
+F 3 "" H 3050 6550 50  0001 C CNN
+	1    3050 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 4150 3350 4150
+Wire Bus Line
+	2450 5850 2450 4450
+Wire Bus Line
+	2450 4450 2100 4450
+Text Label 2150 4450 2    50   ~ 0
+AB[0:19]
+Wire Bus Line
+	3650 5150 3650 4450
+Wire Bus Line
+	3650 4450 3950 4450
+Text Label 3950 4450 0    50   ~ 0
+DB[0:15]
+Wire Wire Line
+	2450 6050 2100 6050
+Wire Wire Line
+	2450 6150 2100 6150
+Wire Wire Line
+	2450 6250 2100 6250
+Text Label 2100 6050 2    50   ~ 0
+HighSRAM
+Text Label 2100 6150 2    50   ~ 0
+RD
+Text Label 2100 6250 2    50   ~ 0
+LowWR
+$Comp
+L Memory_RAM:CY7C199 U16
+U 1 1 5E9D691D
+P 6950 5050
+F 0 "U16" H 6950 6431 50  0000 C CNN
+F 1 "CY7C199" H 6950 6340 50  0000 C CNN
+F 2 "" H 6950 5050 50  0001 C CNN
+F 3 "" H 6950 5050 50  0001 C CNN
+	1    6950 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5E9D6923
+P 7250 3850
+F 0 "#PWR?" H 7250 3700 50  0001 C CNN
+F 1 "VCC" H 7267 4023 50  0000 C CNN
+F 2 "" H 7250 3850 50  0001 C CNN
+F 3 "" H 7250 3850 50  0001 C CNN
+	1    7250 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E9D6929
+P 6950 6250
+F 0 "#PWR?" H 6950 6000 50  0001 C CNN
+F 1 "GND" H 6955 6077 50  0000 C CNN
+F 2 "" H 6950 6250 50  0001 C CNN
+F 3 "" H 6950 6250 50  0001 C CNN
+	1    6950 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 3850 7250 3850
+Wire Bus Line
+	6350 5550 6350 4150
+Wire Bus Line
+	6350 4150 6000 4150
+Text Label 6050 4150 2    50   ~ 0
+AB[0:19]
+Wire Bus Line
+	7550 4850 7550 4150
+Wire Bus Line
+	7550 4150 7850 4150
+Text Label 7850 4150 0    50   ~ 0
+DB[0:15]
+Wire Wire Line
+	6350 5750 6000 5750
+Wire Wire Line
+	6350 5850 6000 5850
+Wire Wire Line
+	6350 5950 6000 5950
+Text Label 6000 5750 2    50   ~ 0
+HighSRAM
+Text Label 6000 5850 2    50   ~ 0
+RD
+Text Label 6000 5950 2    50   ~ 0
+LowWR
+$EndSCHEMATC

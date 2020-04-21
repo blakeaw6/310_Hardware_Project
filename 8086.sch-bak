@@ -342,8 +342,6 @@ Wire Wire Line
 Wire Wire Line
 	4550 5150 4750 5150
 Wire Wire Line
-	2850 4850 4450 4850
-Wire Wire Line
 	4450 4850 4450 5250
 Wire Wire Line
 	4450 5250 4750 5250
@@ -375,8 +373,6 @@ Wire Wire Line
 	3000 6600 3250 6600
 Wire Wire Line
 	2850 5150 3100 5150
-Wire Wire Line
-	2850 4750 4550 4750
 Wire Wire Line
 	2850 4650 4650 4650
 Wire Wire Line
@@ -453,4 +449,8 @@ Wire Wire Line
 	5400 2300 5400 2950
 Wire Wire Line
 	5300 2850 8700 2850
+Wire Wire Line
+	2850 4750 4550 4750
+Wire Wire Line
+	2850 4850 4450 4850
 $EndSCHEMATC

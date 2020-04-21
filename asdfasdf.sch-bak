@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 7
+Sheet 4 7
 Title ""
 Date ""
 Rev ""
@@ -14,14 +14,245 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCU_Intel:8086_Max_Mode U?
-U 1 1 5E9BB77D
-P 6350 4300
-F 0 "U?" H 6350 6281 50  0000 C CNN
-F 1 "8086_Max_Mode" H 6350 6190 50  0000 C CNN
-F 2 "Package_DIP:DIP-40_W15.24mm" H 6400 4400 50  0001 C CIN
-F 3 "http://datasheets.chipdb.org/Intel/x86/808x/datashts/8086/231455-006.pdf" H 6350 4350 50  0001 C CNN
-	1    6350 4300
+L 74xx:74LS245 U?
+U 1 1 5EA0DC36
+P 10050 4900
+AR Path="/5E9BAC16/5EA0DC36" Ref="U?"  Part="1" 
+AR Path="/5E9BB6A3/5EA0DC36" Ref="U?"  Part="1" 
+F 0 "U?" H 10050 5881 50  0000 C CNN
+F 1 "74LS245" H 10050 5790 50  0000 C CNN
+F 2 "" H 10050 4900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS245" H 10050 4900 50  0001 C CNN
+	1    10050 4900
 	1    0    0    -1  
 $EndComp
+$Comp
+L 74xx:74LS373 U?
+U 1 1 5EA0DC55
+P 4950 3500
+AR Path="/5E9BAC16/5EA0DC55" Ref="U?"  Part="1" 
+AR Path="/5E9BB6A3/5EA0DC55" Ref="U?"  Part="1" 
+F 0 "U?" V 4996 2656 50  0000 R CNN
+F 1 "74LS373" H 5200 3150 50  0000 R CNN
+F 2 "" H 4950 3500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS373" H 4950 3500 50  0001 C CNN
+	1    4950 3500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9550 3400 9450 3400
+$Comp
+L 74xx:74LS245 U?
+U 1 1 5EA0DC97
+P 10050 3000
+AR Path="/5E9BAC16/5EA0DC97" Ref="U?"  Part="1" 
+AR Path="/5E9BB6A3/5EA0DC97" Ref="U?"  Part="1" 
+F 0 "U?" H 10050 3981 50  0000 C CNN
+F 1 "74LS245" H 10200 2700 50  0000 C CNN
+F 2 "" H 10050 3000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS245" H 10050 3000 50  0001 C CNN
+	1    10050 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS244 U?
+U 1 1 5EA0DCCB
+P 2050 6750
+AR Path="/5E9BAC16/5EA0DCCB" Ref="U?"  Part="1" 
+AR Path="/5E9BB6A3/5EA0DCCB" Ref="U?"  Part="1" 
+F 0 "U?" H 2050 7731 50  0000 C CNN
+F 1 "74LS244" H 2050 7640 50  0000 C CNN
+F 2 "" H 2050 6750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS244" H 2050 6750 50  0001 C CNN
+	1    2050 6750
+	1    0    0    -1  
+$EndComp
+Entry Wire Line
+	2950 2750 3050 2650
+Entry Wire Line
+	2950 2850 3050 2750
+Entry Wire Line
+	2950 4250 3050 4150
+Wire Wire Line
+	2750 5150 2900 5150
+Wire Wire Line
+	2750 2750 2950 2750
+Wire Wire Line
+	2750 2850 2950 2850
+$Comp
+L MCU_Intel:8086_Min_Mode U?
+U 1 1 5EA0DCEC
+P 2050 3750
+AR Path="/5E9BAC16/5EA0DCEC" Ref="U?"  Part="1" 
+AR Path="/5E9BB6A3/5EA0DCEC" Ref="U?"  Part="1" 
+F 0 "U?" H 2050 5731 50  0000 C CNN
+F 1 "8086_Min_Mode" H 2050 5640 50  0000 C CNN
+F 2 "Package_DIP:DIP-40_W15.24mm" H 2100 3850 50  0001 C CIN
+F 3 "http://datasheets.chipdb.org/Intel/x86/808x/datashts/8086/231455-006.pdf" H 2050 3800 50  0001 C CNN
+	1    2050 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 3450 2950 3450
+Entry Wire Line
+	2950 3450 3050 3350
+Text Label 2800 2850 0    50   ~ 0
+AD1
+$Comp
+L power:VCC #PWR?
+U 1 1 5EA0DC9D
+P 4900 1700
+AR Path="/5E9BAC16/5EA0DC9D" Ref="#PWR?"  Part="1" 
+AR Path="/5E9BB6A3/5EA0DC9D" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4900 1550 50  0001 C CNN
+F 1 "VCC" H 4917 1873 50  0000 C CNN
+F 2 "" H 4900 1700 50  0001 C CNN
+F 3 "" H 4900 1700 50  0001 C CNN
+	1    4900 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 4250 2950 4250
+Wire Wire Line
+	2750 4950 3100 4950
+Wire Wire Line
+	2750 5050 3000 5050
+Text Label 2800 2750 0    50   ~ 0
+AD0
+Wire Wire Line
+	2750 2950 2950 2950
+Entry Wire Line
+	2950 2950 3050 2850
+Wire Wire Line
+	2750 3050 2950 3050
+Wire Wire Line
+	2750 3150 2950 3150
+Wire Wire Line
+	2750 3250 2950 3250
+Wire Wire Line
+	2750 3350 2950 3350
+Wire Wire Line
+	2750 3550 2950 3550
+Wire Wire Line
+	2750 3650 2950 3650
+Wire Wire Line
+	2750 3750 2950 3750
+Wire Wire Line
+	2750 3850 2950 3850
+Wire Wire Line
+	2750 3950 2950 3950
+Wire Wire Line
+	2750 4050 2950 4050
+Wire Wire Line
+	2750 4150 2950 4150
+Entry Wire Line
+	2950 3050 3050 2950
+Entry Wire Line
+	2950 3150 3050 3050
+Entry Wire Line
+	2950 3250 3050 3150
+Entry Wire Line
+	2950 3350 3050 3250
+Entry Wire Line
+	2950 3550 3050 3450
+Entry Wire Line
+	2950 3650 3050 3550
+Entry Wire Line
+	2950 3750 3050 3650
+Entry Wire Line
+	2950 3850 3050 3750
+Entry Wire Line
+	2950 3950 3050 3850
+Entry Wire Line
+	2950 4050 3050 3950
+Entry Wire Line
+	2950 4150 3050 4050
+Wire Wire Line
+	2750 4450 2950 4450
+Wire Wire Line
+	2750 4550 2950 4550
+Wire Wire Line
+	2750 4650 2950 4650
+Wire Wire Line
+	2750 4750 2950 4750
+Entry Wire Line
+	2950 4450 3050 4350
+Entry Wire Line
+	2950 4550 3050 4450
+Entry Wire Line
+	2950 4650 3050 4550
+Entry Wire Line
+	2950 4750 3050 4650
+Text Label 2800 2950 0    50   ~ 0
+AD0
+Text Label 2800 3050 0    50   ~ 0
+AD0
+Text Label 2800 3150 0    50   ~ 0
+AD0
+$Comp
+L 74xx:74LS373 U?
+U 1 1 5EA0DC23
+P 4950 5500
+AR Path="/5E9BAC16/5EA0DC23" Ref="U?"  Part="1" 
+AR Path="/5E9BB6A3/5EA0DC23" Ref="U?"  Part="1" 
+F 0 "U?" H 4950 6481 50  0000 C CNN
+F 1 "74LS373" H 5100 5200 50  0000 C CNN
+F 2 "" H 4950 5500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS373" H 4950 5500 50  0001 C CNN
+	1    4950 5500
+	1    0    0    -1  
+$EndComp
+Entry Bus Bus
+	4050 2650 4150 2550
+Entry Wire Line
+	4150 1050 4250 1150
+Entry Wire Line
+	4150 1150 4250 1250
+Entry Wire Line
+	4150 1250 4250 1350
+Entry Wire Line
+	4150 1350 4250 1450
+Entry Wire Line
+	4150 1450 4250 1550
+Entry Wire Line
+	4150 1550 4250 1650
+Wire Wire Line
+	4450 1450 4250 1450
+Wire Wire Line
+	4250 1350 4450 1350
+Wire Wire Line
+	4450 1250 4250 1250
+Wire Wire Line
+	4450 1150 4250 1150
+Wire Wire Line
+	4450 1750 4250 1750
+Wire Wire Line
+	4450 1650 4250 1650
+Wire Wire Line
+	4450 1550 4250 1550
+Entry Wire Line
+	4150 1650 4250 1750
+Entry Wire Line
+	4150 1750 4250 1850
+$Comp
+L 74xx:74LS373 U?
+U 1 1 5EA0DC7F
+P 4950 1650
+AR Path="/5E9BAC16/5EA0DC7F" Ref="U?"  Part="1" 
+AR Path="/5E9BB6A3/5EA0DC7F" Ref="U?"  Part="1" 
+F 0 "U?" V 4996 806 50  0000 R CNN
+F 1 "74LS373" H 5200 1300 50  0000 R CNN
+F 2 "" H 4950 1650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS373" H 4950 1650 50  0001 C CNN
+	1    4950 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 1850 4250 1850
+Wire Bus Line
+	3050 2650 8100 2650
+Wire Bus Line
+	4150 1050 4150 2550
+Wire Bus Line
+	3050 2650 3050 4650
 $EndSCHEMATC

@@ -14,14 +14,435 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCU_Intel:8086_Max_Mode U?
-U 1 1 5E9BAC9B
-P 6250 4300
-F 0 "U?" H 6250 6281 50  0000 C CNN
-F 1 "8086_Max_Mode" H 6250 6190 50  0000 C CNN
-F 2 "Package_DIP:DIP-40_W15.24mm" H 6300 4400 50  0001 C CIN
-F 3 "http://datasheets.chipdb.org/Intel/x86/808x/datashts/8086/231455-006.pdf" H 6250 4350 50  0001 C CNN
-	1    6250 4300
+L power:GND #PWR?
+U 1 1 5EBE4590
+P 3150 7500
+F 0 "#PWR?" H 3150 7250 50  0001 C CNN
+F 1 "GND" H 3155 7327 50  0000 C CNN
+F 2 "" H 3150 7500 50  0001 C CNN
+F 3 "" H 3150 7500 50  0001 C CNN
+	1    3150 7500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 7300 3150 7400
+Wire Wire Line
+	3250 7400 3150 7400
+Connection ~ 3150 7400
+Wire Wire Line
+	3150 7400 3150 7500
+$Comp
+L power:GND #PWR?
+U 1 1 5EBFF0E9
+P 3900 7700
+F 0 "#PWR?" H 3900 7450 50  0001 C CNN
+F 1 "GND" V 3905 7572 50  0000 R CNN
+F 2 "" H 3900 7700 50  0001 C CNN
+F 3 "" H 3900 7700 50  0001 C CNN
+	1    3900 7700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3250 7300 3150 7300
+$Comp
+L 74xx:74LS373 U?
+U 1 1 5EA16642
+P 5250 5450
+F 0 "U?" H 5250 6431 50  0000 C CNN
+F 1 "74LS373" H 5250 6340 50  0000 C CNN
+F 2 "" H 5250 5450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS373" H 5250 5450 50  0001 C CNN
+	1    5250 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 6800 4650 6800
+Wire Wire Line
+	3750 7700 3900 7700
+Wire Wire Line
+	4250 6700 4650 6700
+Wire Wire Line
+	4250 6600 4650 6600
+Wire Wire Line
+	4250 6500 4650 6500
+Wire Wire Line
+	4250 6400 4650 6400
+Wire Wire Line
+	8700 5200 9650 5200
+Wire Wire Line
+	9650 5400 9500 5400
+Wire Wire Line
+	9650 5500 9500 5500
+Wire Wire Line
+	9200 4700 9650 4700
+Wire Wire Line
+	8900 5000 9650 5000
+Wire Wire Line
+	8800 5100 9650 5100
+Wire Wire Line
+	9000 4900 9650 4900
+Wire Wire Line
+	9100 4800 9650 4800
+Wire Wire Line
+	9100 3950 9100 4800
+Wire Wire Line
+	9400 4500 9650 4500
+$Comp
+L 74xx:74LS245 U?
+U 1 1 5EA5D250
+P 10150 5000
+F 0 "U?" H 10150 5981 50  0000 C CNN
+F 1 "74LS245" H 10150 5890 50  0000 C CNN
+F 2 "" H 10150 5000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS245" H 10150 5000 50  0001 C CNN
+	1    10150 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 4350 8700 5200
+Wire Wire Line
+	8800 4250 8800 5100
+Wire Wire Line
+	8900 4150 8900 5000
+Wire Wire Line
+	9000 4050 9000 4900
+Wire Wire Line
+	7600 3950 9100 3950
+Wire Wire Line
+	8000 4350 8700 4350
+Wire Wire Line
+	7800 4150 8900 4150
+Wire Wire Line
+	7700 4050 9000 4050
+Wire Wire Line
+	7900 4250 8800 4250
+Wire Wire Line
+	7400 3750 9300 3750
+Wire Wire Line
+	7500 3850 9200 3850
+Wire Wire Line
+	9300 3750 9300 4600
+Wire Wire Line
+	9200 3850 9200 4700
+Wire Wire Line
+	9300 4600 9650 4600
+Wire Wire Line
+	5800 3350 9200 3350
+$Comp
+L power:GND #PWR?
+U 1 1 5EAEA3FC
+P 8300 2300
+F 0 "#PWR?" H 8300 2050 50  0001 C CNN
+F 1 "GND" V 8305 2172 50  0000 R CNN
+F 2 "" H 8300 2300 50  0001 C CNN
+F 3 "" H 8300 2300 50  0001 C CNN
+	1    8300 2300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5400 2950 8800 2950
+Wire Wire Line
+	5500 3050 8900 3050
+Wire Wire Line
+	5600 3150 9000 3150
+Wire Wire Line
+	5700 3250 9100 3250
+$Comp
+L 74xx:74LS373 U?
+U 1 1 5E9FB727
+P 7800 1800
+F 0 "U?" V 7846 956 50  0000 R CNN
+F 1 "74LS373" V 7755 956 50  0000 R CNN
+F 2 "" H 7800 1800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS373" H 7800 1800 50  0001 C CNN
+	1    7800 1800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5300 2850 8700 2850
+$Comp
+L power:GND #PWR?
+U 1 1 5EAF33FC
+P 8600 1800
+F 0 "#PWR?" H 8600 1550 50  0001 C CNN
+F 1 "GND" H 8605 1627 50  0000 C CNN
+F 2 "" H 8600 1800 50  0001 C CNN
+F 3 "" H 8600 1800 50  0001 C CNN
+	1    8600 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 3550 9400 3550
+Wire Wire Line
+	7300 3650 9400 3650
+Wire Wire Line
+	9400 3650 9400 4500
+Wire Wire Line
+	5900 3450 9300 3450
+Connection ~ 7600 3950
+Connection ~ 8000 4350
+Connection ~ 7800 4150
+Connection ~ 7700 4050
+Connection ~ 7900 4250
+Connection ~ 7500 3850
+Connection ~ 7400 3750
+Connection ~ 7300 3650
+$Comp
+L power:GND #PWR?
+U 1 1 5EAF50BC
+P 6600 1800
+F 0 "#PWR?" H 6600 1550 50  0001 C CNN
+F 1 "GND" H 6605 1627 50  0000 C CNN
+F 2 "" H 6600 1800 50  0001 C CNN
+F 3 "" H 6600 1800 50  0001 C CNN
+	1    6600 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5EAF6E63
+P 7000 1800
+F 0 "#PWR?" H 7000 1650 50  0001 C CNN
+F 1 "VCC" H 7017 1973 50  0000 C CNN
+F 2 "" H 7000 1800 50  0001 C CNN
+F 3 "" H 7000 1800 50  0001 C CNN
+	1    7000 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EAF56FD
+P 6300 2300
+F 0 "#PWR?" H 6300 2050 50  0001 C CNN
+F 1 "GND" V 6305 2172 50  0000 R CNN
+F 2 "" H 6300 2300 50  0001 C CNN
+F 3 "" H 6300 2300 50  0001 C CNN
+	1    6300 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 74xx:74LS373 U?
+U 1 1 5E9D1054
+P 5800 1800
+F 0 "U?" V 5846 956 50  0000 R CNN
+F 1 "74LS373" V 5755 956 50  0000 R CNN
+F 2 "" H 5800 1800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS373" H 5800 1800 50  0001 C CNN
+	1    5800 1800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2850 4350 8000 4350
+Wire Wire Line
+	9400 3300 9400 3550
+Wire Wire Line
+	9300 3450 9300 3200
+Wire Wire Line
+	9200 3100 9200 3350
+Wire Wire Line
+	9100 3250 9100 3000
+Wire Wire Line
+	9000 2900 9000 3150
+Wire Wire Line
+	8900 3050 8900 2800
+Wire Wire Line
+	8800 2950 8800 2700
+Wire Wire Line
+	8700 2850 8700 2600
+Wire Wire Line
+	8900 2800 9650 2800
+Wire Wire Line
+	8800 2700 9650 2700
+Wire Wire Line
+	8700 2600 9650 2600
+Wire Wire Line
+	9000 2900 9650 2900
+Wire Wire Line
+	9100 3000 9650 3000
+Wire Wire Line
+	9200 3100 9650 3100
+Wire Wire Line
+	9300 3200 9650 3200
+Wire Wire Line
+	9650 3500 9550 3500
+Wire Wire Line
+	9400 3300 9650 3300
+Wire Wire Line
+	10150 1800 10050 1800
+$Comp
+L 74xx:74LS245 U?
+U 1 1 5EA5C996
+P 10150 3100
+F 0 "U?" H 10150 4081 50  0000 C CNN
+F 1 "74LS245" H 10150 3990 50  0000 C CNN
+F 2 "" H 10150 3100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS245" H 10150 3100 50  0001 C CNN
+	1    10150 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5EAF5BDA
+P 5000 1800
+F 0 "#PWR?" H 5000 1650 50  0001 C CNN
+F 1 "VCC" H 5017 1973 50  0000 C CNN
+F 2 "" H 5000 1800 50  0001 C CNN
+F 3 "" H 5000 1800 50  0001 C CNN
+	1    5000 1800
+	1    0    0    -1  
+$EndComp
+Connection ~ 5900 3450
+Connection ~ 6000 3550
+Connection ~ 5400 2950
+Connection ~ 5500 3050
+Connection ~ 5600 3150
+Connection ~ 5700 3250
+Connection ~ 5300 2850
+Connection ~ 5800 3350
+Wire Wire Line
+	5300 2300 5300 2850
+Wire Wire Line
+	5400 2300 5400 2950
+Wire Wire Line
+	5500 2300 5500 3050
+Wire Wire Line
+	6200 2300 6200 2550
+Connection ~ 6200 2550
+Wire Wire Line
+	8200 2300 8200 2550
+Wire Wire Line
+	5600 2300 5600 3150
+Wire Wire Line
+	5700 2300 5700 3250
+Wire Wire Line
+	5800 2300 5800 3350
+Wire Wire Line
+	5900 2300 5900 3450
+Wire Wire Line
+	6000 2300 6000 3550
+Wire Wire Line
+	7300 2300 7300 3650
+Wire Wire Line
+	7400 2300 7400 3750
+Wire Wire Line
+	7500 2300 7500 3850
+Wire Wire Line
+	7600 2300 7600 3950
+Wire Wire Line
+	7700 2300 7700 4050
+Wire Wire Line
+	7800 2300 7800 4150
+Wire Wire Line
+	7900 2300 7900 4250
+Wire Wire Line
+	8000 2300 8000 4350
+Wire Wire Line
+	6200 2550 8200 2550
+Wire Wire Line
+	4750 4550 4750 4950
+Wire Wire Line
+	4650 4650 4650 5050
+Wire Wire Line
+	4650 5050 4750 5050
+Wire Wire Line
+	4550 4750 4550 5150
+Wire Wire Line
+	4550 5150 4750 5150
+Wire Wire Line
+	2850 4850 4450 4850
+Wire Wire Line
+	4450 4850 4450 5250
+Wire Wire Line
+	4450 5250 4750 5250
+Connection ~ 4250 2550
+Wire Wire Line
+	4250 2550 6200 2550
+Wire Wire Line
+	2850 2650 4350 2650
+Wire Wire Line
+	4750 5350 4350 5350
+Wire Wire Line
+	4350 5350 4350 2650
+Wire Wire Line
+	4250 5850 4250 2550
+Wire Wire Line
+	4750 5850 4250 5850
+$Comp
+L 74xx:74LS244 U?
+U 1 1 5EA1725D
+P 3750 6900
+F 0 "U?" H 3750 7881 50  0000 C CNN
+F 1 "74LS244" H 3750 7790 50  0000 C CNN
+F 2 "" H 3750 6900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS244" H 3750 6900 50  0001 C CNN
+	1    3750 6900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 6600 3250 6600
+Wire Wire Line
+	2850 5150 3100 5150
+Wire Wire Line
+	2850 4750 4550 4750
+Wire Wire Line
+	2850 4650 4650 4650
+Wire Wire Line
+	2850 4550 4750 4550
+Wire Wire Line
+	2850 4250 7900 4250
+Wire Wire Line
+	2850 4150 7800 4150
+Wire Wire Line
+	2850 4050 7700 4050
+Wire Wire Line
+	2850 3950 7600 3950
+Wire Wire Line
+	2850 3850 7500 3850
+Wire Wire Line
+	2850 3750 7400 3750
+Wire Wire Line
+	2850 3650 7300 3650
+Wire Wire Line
+	2850 3550 6000 3550
+Wire Wire Line
+	2850 3450 5900 3450
+Wire Wire Line
+	2850 3350 5800 3350
+Wire Wire Line
+	2850 3250 5700 3250
+Wire Wire Line
+	2850 3150 5600 3150
+Wire Wire Line
+	2850 3050 5500 3050
+Wire Wire Line
+	2850 2950 5400 2950
+Wire Wire Line
+	2850 2850 5300 2850
+Wire Wire Line
+	2850 2550 4250 2550
+Wire Wire Line
+	2850 5050 3200 5050
+Wire Wire Line
+	3200 5050 3200 6400
+Wire Wire Line
+	3200 6400 3250 6400
+Wire Wire Line
+	3100 5150 3100 6500
+Wire Wire Line
+	3100 6500 3250 6500
+Wire Wire Line
+	2850 5250 3000 5250
+Wire Wire Line
+	3000 5250 3000 6600
+$Comp
+L MCU_Intel:8086_Min_Mode U?
+U 1 1 5E9CA6F8
+P 2150 3850
+F 0 "U?" H 2150 5831 50  0000 C CNN
+F 1 "8086_Min_Mode" H 2150 5740 50  0000 C CNN
+F 2 "Package_DIP:DIP-40_W15.24mm" H 2200 3950 50  0001 C CIN
+F 3 "http://datasheets.chipdb.org/Intel/x86/808x/datashts/8086/231455-006.pdf" H 2150 3900 50  0001 C CNN
+	1    2150 3850
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

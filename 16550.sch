@@ -1,0 +1,285 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 7 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Logic_Programmable:PAL16L8 U?
+U 1 1 5F027763
+P 5300 6650
+F 0 "U?" H 5300 7531 50  0000 C CNN
+F 1 "PAL16L8" H 5300 7440 50  0000 C CNN
+F 2 "" H 5300 6650 50  0001 C CNN
+F 3 "" H 5300 6650 50  0001 C CNN
+	1    5300 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L max235cpg:max235cpg U?
+U 1 1 5F023538
+P 7350 3050
+F 0 "U?" H 8650 3437 60  0000 C CNN
+F 1 "max235cpg" H 8650 3331 60  0000 C CNN
+F 2 "max235cpg" H 8650 3290 60  0001 C CNN
+F 3 "" H 7350 3050 60  0000 C CNN
+	1    7350 3050
+	1    0    0    -1  
+$EndComp
+Text GLabel 2150 3400 0    50   Input ~ 0
+PCLK(8284)
+Text GLabel 4500 4400 2    50   Input ~ 0
+RCLK
+Text GLabel 4500 4600 2    50   Input ~ 0
+BAUDOUT
+$Comp
+L power:GND #PWR?
+U 1 1 5F06B893
+P 10050 4400
+F 0 "#PWR?" H 10050 4150 50  0001 C CNN
+F 1 "GND" H 10055 4227 50  0000 C CNN
+F 2 "" H 10050 4400 50  0001 C CNN
+F 3 "" H 10050 4400 50  0001 C CNN
+	1    10050 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L DSUB-9:DSUB-9 J?
+U 1 1 5F01F87E
+P 6050 1750
+F 0 "J?" H 6878 1403 60  0000 L CNN
+F 1 "DSUB-9" H 6878 1297 60  0000 L CNN
+F 2 "DSUB-9" H 6650 1390 60  0001 C CNN
+F 3 "" H 6050 1750 60  0000 C CNN
+	1    6050 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F05F720
+P 6000 2700
+F 0 "#PWR?" H 6000 2450 50  0001 C CNN
+F 1 "GND" H 6005 2527 50  0000 C CNN
+F 2 "" H 6000 2700 50  0001 C CNN
+F 3 "" H 6000 2700 50  0001 C CNN
+	1    6000 2700
+	1    0    0    -1  
+$EndComp
+Entry Wire Line
+	2150 1650 2250 1750
+Entry Wire Line
+	2150 1750 2250 1850
+Entry Wire Line
+	2150 1850 2250 1950
+Entry Wire Line
+	2150 1950 2250 2050
+Entry Wire Line
+	2150 2150 2250 2250
+Entry Wire Line
+	2150 2050 2250 2150
+Entry Wire Line
+	2150 2250 2250 2350
+Entry Wire Line
+	2150 2350 2250 2450
+Entry Wire Line
+	2150 2550 2250 2650
+Entry Wire Line
+	2150 2750 2250 2850
+Entry Wire Line
+	2150 2750 2250 2850
+Entry Wire Line
+	2150 2650 2250 2750
+Entry Wire Line
+	2150 2850 2250 2950
+Entry Wire Line
+	2150 2950 2250 3050
+Entry Wire Line
+	2150 3050 2250 3150
+Wire Bus Line
+	2150 2500 1750 2500
+Wire Wire Line
+	2450 2750 2250 2750
+Wire Wire Line
+	2450 2850 2250 2850
+Wire Wire Line
+	2450 2950 2250 2950
+Wire Wire Line
+	2450 3150 2250 3150
+Wire Wire Line
+	2450 3050 2250 3050
+Wire Wire Line
+	2450 2650 2250 2650
+Wire Wire Line
+	2450 2150 2250 2150
+Wire Wire Line
+	2450 1750 2250 1750
+Wire Wire Line
+	2450 1850 2250 1850
+Wire Wire Line
+	2450 1950 2250 1950
+Wire Wire Line
+	2450 2050 2250 2050
+Wire Wire Line
+	2450 2250 2250 2250
+Wire Wire Line
+	2450 2350 2250 2350
+Wire Wire Line
+	2450 2450 2250 2450
+Wire Wire Line
+	5800 5550 7050 5550
+Wire Wire Line
+	5800 6150 5800 5550
+Wire Bus Line
+	7050 5950 7000 5950
+Wire Bus Line
+	7050 5550 7050 5950
+Wire Wire Line
+	6000 2150 6000 2700
+Wire Wire Line
+	6050 2150 6000 2150
+Wire Wire Line
+	4300 2800 4650 2800
+Connection ~ 4650 2800
+Wire Wire Line
+	4650 2800 4650 2350
+Wire Wire Line
+	4650 2800 4650 3450
+Wire Wire Line
+	7250 3900 7250 3950
+Wire Wire Line
+	4950 3900 7250 3900
+Connection ~ 4950 3900
+Wire Wire Line
+	4850 2250 6050 2250
+Wire Wire Line
+	4850 3350 4850 2250
+Wire Wire Line
+	7350 3350 4850 3350
+Wire Wire Line
+	4750 3250 7350 3250
+Connection ~ 4750 3250
+Wire Wire Line
+	4750 3800 4750 3250
+Wire Wire Line
+	4750 1850 6050 1850
+Wire Wire Line
+	5950 3700 5950 3650
+Wire Wire Line
+	4300 3900 4950 3900
+Connection ~ 10050 3450
+Wire Wire Line
+	10050 3350 10050 3450
+Wire Wire Line
+	9950 3350 10050 3350
+Wire Wire Line
+	10050 3450 10050 4400
+Wire Wire Line
+	9950 3450 10050 3450
+Wire Wire Line
+	10600 4150 9950 4150
+Wire Wire Line
+	10600 5150 10600 4150
+Wire Wire Line
+	4950 5150 10600 5150
+Wire Wire Line
+	4950 4250 4950 5150
+Wire Wire Line
+	4550 4250 4950 4250
+Wire Wire Line
+	7250 3950 7350 3950
+Wire Wire Line
+	4950 1950 4950 3900
+Wire Wire Line
+	6050 1950 4950 1950
+Wire Wire Line
+	4650 3450 7350 3450
+Wire Wire Line
+	4750 1850 4750 3250
+Wire Wire Line
+	4650 2350 6050 2350
+Wire Wire Line
+	4450 2450 6050 2450
+Wire Wire Line
+	4550 2050 6050 2050
+Wire Wire Line
+	4300 4600 4500 4600
+Wire Wire Line
+	4300 4400 4500 4400
+Wire Wire Line
+	2300 3400 2150 3400
+Wire Bus Line
+	2150 1550 1750 1550
+Wire Wire Line
+	4450 2250 4450 2450
+Wire Wire Line
+	4450 2150 4600 2150
+Wire Wire Line
+	4600 2150 4600 2250
+Wire Wire Line
+	4600 2250 4850 2250
+Connection ~ 4850 2250
+Wire Wire Line
+	4450 2050 4500 2050
+Wire Wire Line
+	4500 1750 6050 1750
+Wire Wire Line
+	4550 2050 4550 2700
+Wire Wire Line
+	4550 2700 4550 4250
+Connection ~ 4550 2700
+Wire Wire Line
+	4300 3800 4750 3800
+Wire Wire Line
+	4550 2700 4300 2700
+Wire Wire Line
+	4500 2050 4500 1750
+$Comp
+L Interface_UART:16550 U?
+U 1 1 5F01E86F
+P 3450 3150
+F 0 "U?" H 3450 5031 50  0000 C CNN
+F 1 "16550" H 3450 4940 50  0000 C CNN
+F 2 "Package_DIP:DIP-40_W15.24mm" H 3450 3150 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/pc16550d.pdf" H 3450 3150 50  0001 C CNN
+	1    3450 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 4350 1950 4350
+Wire Wire Line
+	2450 4050 1950 4050
+Wire Wire Line
+	2450 4150 1950 4150
+Wire Wire Line
+	1950 4050 1950 4150
+Connection ~ 1950 4150
+Wire Wire Line
+	1950 4150 1950 4350
+Connection ~ 1950 4350
+Wire Wire Line
+	1950 4350 1950 4850
+$Comp
+L power:GND #PWR?
+U 1 1 5F08B71A
+P 1950 4850
+F 0 "#PWR?" H 1950 4600 50  0001 C CNN
+F 1 "GND" H 1955 4677 50  0000 C CNN
+F 2 "" H 1950 4850 50  0001 C CNN
+F 3 "" H 1950 4850 50  0001 C CNN
+	1    1950 4850
+	1    0    0    -1  
+$EndComp
+Wire Bus Line
+	2150 2500 2150 3050
+Wire Bus Line
+	2150 1550 2150 2350
+$EndSCHEMATC

@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 5
+Sheet 3 7
 Title ""
 Date ""
 Rev ""
@@ -158,8 +158,6 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS373" H 7800 1800 50  0001 C CNN
 	1    7800 1800
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	5300 2850 8700 2850
 $Comp
 L power:GND #PWR?
 U 1 1 5EAF33FC
@@ -246,8 +244,6 @@ Wire Wire Line
 Wire Wire Line
 	8900 3050 8900 2800
 Wire Wire Line
-	8800 2950 8800 2700
-Wire Wire Line
 	8700 2850 8700 2600
 Wire Wire Line
 	8900 2800 9650 2800
@@ -297,12 +293,9 @@ Connection ~ 5400 2950
 Connection ~ 5500 3050
 Connection ~ 5600 3150
 Connection ~ 5700 3250
-Connection ~ 5300 2850
 Connection ~ 5800 3350
 Wire Wire Line
 	5300 2300 5300 2850
-Wire Wire Line
-	5400 2300 5400 2950
 Wire Wire Line
 	5500 2300 5500 3050
 Wire Wire Line
@@ -445,4 +438,19 @@ F 3 "http://datasheets.chipdb.org/Intel/x86/808x/datashts/8086/231455-006.pdf" H
 	1    2150 3850
 	1    0    0    -1  
 $EndComp
+Text GLabel 3200 2850 0    50   Input ~ 0
+AD0
+Text GLabel 3200 2950 0    50   Input ~ 0
+AD1
+Text GLabel 5400 2500 1    50   Input ~ 0
+AD1
+Text GLabel 5300 2500 1    50   Input ~ 0
+AD0
+Connection ~ 5300 2850
+Wire Wire Line
+	8800 2950 8800 2700
+Wire Wire Line
+	5400 2300 5400 2950
+Wire Wire Line
+	5300 2850 8700 2850
 $EndSCHEMATC

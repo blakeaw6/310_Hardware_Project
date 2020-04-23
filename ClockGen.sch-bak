@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 7
+Sheet 8 8
 Title ""
 Date ""
 Rev ""
@@ -13,17 +13,9 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text GLabel 6450 3200 2    50   Output ~ 0
+Text GLabel 6450 3200 0    50   Input ~ 0
 CLK
-Wire Wire Line
-	6200 3200 6450 3200
-Wire Wire Line
-	6200 3800 6600 3800
-Wire Wire Line
-	6200 3400 6600 3400
-Wire Wire Line
-	6200 3600 6600 3600
-Text GLabel 6600 3600 2    50   Input ~ 0
+Text GLabel 6550 3600 0    50   Input ~ 0
 RESET
 Wire Wire Line
 	6200 4200 6500 4200
@@ -214,7 +206,7 @@ Wire Wire Line
 	4850 6100 4850 6200
 Wire Wire Line
 	4200 3200 4200 5300
-Text GLabel 6600 3400 2    50   Input ~ 0
+Text GLabel 6550 3400 0    50   Input ~ 0
 READY
 $Comp
 L Switch:SW_DPST_x2 SW?
@@ -227,6 +219,22 @@ F 3 "~" H 4400 6100 50  0001 C CNN
 	1    4400 6100
 	1    0    0    -1  
 $EndComp
-Text GLabel 6600 3800 2    50   Output ~ 0
-PCLK(8284)
+Text GLabel 6500 3800 0    50   Input ~ 0
+PCLK
+Text HLabel 7200 3200 0    50   Input ~ 0
+CLK
+Wire Wire Line
+	6200 3400 7200 3400
+Wire Wire Line
+	6200 3200 7200 3200
+Text HLabel 7200 3400 0    50   Input ~ 0
+READY
+Wire Wire Line
+	6200 3600 7200 3600
+Text HLabel 7200 3600 0    50   Input ~ 0
+RESET
+Wire Wire Line
+	6200 3800 7200 3800
+Text HLabel 7200 3800 0    50   Input ~ 0
+PCLK
 $EndSCHEMATC

@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 7
+Sheet 4 8
 Title ""
 Date ""
 Rev ""
@@ -276,12 +276,14 @@ F 3 "" H 1950 4850 50  0001 C CNN
 $EndComp
 Text HLabel 1750 1550 0    50   Input ~ 0
 ADDRESS_BUS
-Text GLabel 2150 3400 0    50   Input ~ 0
-PCLK(8284)
+Text GLabel 2200 3350 0    50   Input ~ 0
+PCLK
+Wire Wire Line
+	1600 3350 2450 3350
+Text HLabel 1600 3350 0    50   Input ~ 0
+PCLK
 Wire Bus Line
 	2150 2500 2150 3050
 Wire Bus Line
 	2150 1550 2150 2350
-Wire Wire Line
-	2300 3400 2150 3400
 $EndSCHEMATC

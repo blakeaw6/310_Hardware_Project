@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 8
+Sheet 3 6
 Title ""
 Date ""
 Rev ""
@@ -14,10 +14,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector_Generic:Conn_02x30_Top_Bottom J?
+L Connector_Generic:Conn_02x30_Top_Bottom J1
 U 1 1 5EA32CD9
 P 3800 4450
-F 0 "J?" H 3850 6067 50  0000 C CNN
+F 0 "J1" H 3850 6067 50  0000 C CNN
 F 1 "Conn_02x30_Top_Bottom" H 3850 5976 50  0000 C CNN
 F 2 "" H 3800 4450 50  0001 C CNN
 F 3 "~" H 3800 4450 50  0001 C CNN
@@ -226,10 +226,38 @@ Wire Wire Line
 	4400 3750 4100 3750
 Wire Bus Line
 	4500 2650 5200 2650
+Text HLabel 5850 3300 0    50   Input ~ 0
+CONTROL_BUS
+NoConn ~ 3600 4650
+NoConn ~ 3600 4750
+NoConn ~ 3600 4850
+NoConn ~ 3600 4950
+NoConn ~ 3600 5050
+NoConn ~ 3600 5150
+NoConn ~ 3600 5250
+NoConn ~ 3600 5350
+NoConn ~ 3600 5450
+NoConn ~ 3600 5550
+NoConn ~ 3600 5650
+NoConn ~ 3600 5750
+NoConn ~ 3600 5850
+NoConn ~ 3600 5950
+NoConn ~ 4100 4650
+NoConn ~ 4100 4750
+NoConn ~ 4100 4850
+NoConn ~ 4100 4950
+NoConn ~ 4100 5050
+NoConn ~ 4100 5150
+NoConn ~ 4100 5250
+NoConn ~ 4100 5350
+NoConn ~ 4100 5450
+NoConn ~ 4100 5550
+NoConn ~ 4100 5650
+NoConn ~ 4100 5750
+NoConn ~ 4100 5850
+NoConn ~ 4100 5950
 Wire Bus Line
 	3200 2700 3200 4450
 Wire Bus Line
 	4500 2650 4500 4450
-Text HLabel 5850 3300 0    50   Input ~ 0
-CONTROL_BUS
 $EndSCHEMATC

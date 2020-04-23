@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 7
+Sheet 2 8
 Title ""
 Date ""
 Rev ""
@@ -336,14 +336,6 @@ Wire Bus Line
 	7400 2800 7650 2800
 Text HLabel 7650 2800 2    50   Input ~ 0
 ADDRESS_BUS
-Wire Bus Line
-	7400 2800 7400 4500
-Wire Bus Line
-	6800 4400 6800 5350
-Wire Bus Line
-	6700 2800 6700 4300
-Wire Bus Line
-	3450 3500 3450 4500
 Wire Wire Line
 	6550 4600 6150 4600
 Wire Wire Line
@@ -371,4 +363,16 @@ F 3 "" H 3950 4700 60  0000 C CNN
 	1    3950 4700
 	1    0    0    1   
 $EndComp
+Wire Bus Line
+	6800 4400 6800 5350
+Wire Bus Line
+	6700 2800 6700 4300
+Wire Bus Line
+	7400 2800 7400 4500
+Wire Bus Line
+	3450 3500 3450 4500
+Text HLabel 4850 2600 0    50   Input ~ 0
+DATA_BUS
+Text HLabel 5750 2600 0    50   Input ~ 0
+CONTROL_BUS
 $EndSCHEMATC
